@@ -1,4 +1,4 @@
-@SuppressWarnings("all")
+@SuppressWarnings("")
 public class Booleans {
     public static void main(String[] args) {
 //        String myString = "my string";
@@ -35,27 +35,28 @@ public class Booleans {
         // java keywords: true false
 
         /*
-        if (exprsion that we check is true) {
-
-          do this code block if the expretion is true
-
+        if (expression) { true -> (into code)  false -V (skip)
+          do this code block if the expression is true
         }
          */
 
-        int orionsInt = 12;
+        int orionsInt = 10;
         int erimsInt = 15;
         boolean myBool = false;
         // start with one 'if'
         // then as many 'else if' as you need
         // then can end with one 'else'
 
-        if (orionsInt > erimsInt || !myBool) {
+        if (orionsInt == 10 || erimsInt == 10) {
             System.out.println("!!!!");
-        } else if (orionsInt == erimsInt) {
+        } else if (orionsInt != erimsInt) {
             System.out.println("????");
-        } else {
+        } else if (1 < 0) {
             System.out.println("####");
+        } else {
+            System.out.println("java");
         }
+
 
         if (1 + 1 == 2) {
             System.out.println("1 + 1 is 2");
