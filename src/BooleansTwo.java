@@ -7,10 +7,10 @@ public class BooleansTwo {
 
 //        int start = 1;
 //        String message = "";
-//        // when start is 0 print "learning java is fun"
-//        // when start is less than 10 but not 0 print "hello"
-//        // when start is greater than 9 print "hello world"
-//
+        // when start is 0 print "learning java is fun"
+        // when start is less than 10 but not 0 print "hello"
+        // when start is greater than 9 print "hello world"
+
 //        if (start == 0) {
 //            message = "learning java is fun";
 //        } else if (start < 10) {
@@ -18,23 +18,34 @@ public class BooleansTwo {
 //        } else {
 //            message = "hello world";
 //        }
+
+        // above and below are the same
+
+//        if (start == 0) {
+//            message = "learning java is fun";
+//        } else {
+//            message = start < 10 ? "hello" : "hello world";
+//        }
+//
 //
 //        System.out.println(message);
 
 
 
-//        int start = 7;
+//        int start = 4;
 //        String message = "";
-//        // when start is less than 10 and greater than 5 print "abc"
-//        // otherwise print "good bye"
-//
-//        // code here
+        // when start is less than 10 and greater than 5 print "abc"
+        // otherwise print "good bye"
+
+        // code here
 //        if (start < 10 && start > 5) {
 //            message = "abc";
 //        } else {
 //            message = "good bye";
 //        }
-//
+
+//        message = start < 10 && start > 5 ? "abc" : "good bye";
+
 //        System.out.println(message);
 
 
@@ -77,45 +88,43 @@ public class BooleansTwo {
         // start % 2 != 0
         // start % 2 == 1
 
-//        int start = 17;
-//        String message = "";
-//        // when start is odd print "odd numbers rock"
-//        // when start is even and greater than 10 print "large"
-//        // otherwise print "hello world"
-//
-//        // code here
-//        if (start % 2 == 1) {
-//            message = "odd numbers rock";
-//        } else if (start > 10) {
-//            message = "large";
-//        } else {
-//            message = "hello";
-//        }
-//
-//        System.out.println(message);
-
-
-
-        int start = 7;
+        int start = 8;
         String message = "";
-        // when start is divisible by 3 and 4 print "super star"
-        // otherwise
-          // when start is divisible by 3 print "hello world"
-          // when start is divisible by 4 print "java rocks"
-          // otherwise print "good bye"
+        // when start is odd print "odd numbers rock"
+        // when start is even and greater than 10 print "large"
+        // otherwise print "hello world"
 
         // code here
-        if (start % 3 == 0 && start % 4 == 0) {
-            message = "super star";
-        } else if (start % 3 == 0) {
-            message = "hello world";
-        } else if (start % 4 == 0) {
-            message = "java rocks";
+        if (start % 2 == 1) {
+            message = "odd numbers rock";
         } else {
-            message = "good bye";
+            message = start > 10 ? "large" : "hello world";
         }
 
         System.out.println(message);
+
+
+
+//        int start = 7;
+//        String message = "";
+//        // when start is divisible by 3 and 4 print "super star"
+//        // otherwise
+//          // when start is divisible by 3 print "hello world"
+//          // when start is divisible by 4 print "java rocks"
+//          // otherwise print "good bye"
+//
+//        // code here
+//        if (start % 3 == 0 && start % 4 == 0) {
+//            message = "super star";
+//        } else if (start % 3 == 0) {
+//            message = "hello world";
+//        } else if (start % 4 == 0) {
+//            message = "java rocks";
+//        } else {
+//            message = "good bye";
+//        }
+//
+//        System.out.println(message);
 
     }
 }
