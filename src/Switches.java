@@ -2,6 +2,23 @@
 public class Switches {
     public static void main(String[] args) {
 
+        String myCondition = "something else";
+
+
+        //     condition to check for
+        switch (myCondition) {
+            case "condition" : // case: case you want to match with to run this code
+                System.out.println("it was condition");
+                break; // break: break out of swich statement
+            case "something else" :
+                System.out.println("codition is something else");
+                break;
+            default : // default catch all case
+                System.out.println("default");
+        }
+
+
+
 //        String myString = "gras";
 //
 //        switch (myString) {
@@ -142,27 +159,27 @@ public class Switches {
         // "it is a time of year", "it is a name", "it is a food"
         // for default print out "when, who, what? yum"
 
-        String string = "tofu";
-
-        switch (string) {
-            case "coffee" :
-                System.out.println("yum coffee");
-            case "stew" :
-            case "tofu" :
-            case "watermelon" :
-                System.out.println("it is a food");
-                break;
-            case "Brittny" :
-            case "Danny" :
-                System.out.println("it is a name");
-                break;
-            case "birthday" :
-            case "new years" :
-                System.out.println("it is a time of year");
-                break;
-            default :
-                System.out.println("when, who, what? yum");
-        }
+//        String string = "tofu";
+//
+//        switch (string) {
+//            case "coffee" :
+//                System.out.println("yum coffee");
+//            case "stew" :
+//            case "tofu" :
+//            case "watermelon" :
+//                System.out.println("it is a food");
+//                break;
+//            case "Brittny" :
+//            case "Danny" :
+//                System.out.println("it is a name");
+//                break;
+//            case "birthday" :
+//            case "new years" :
+//                System.out.println("it is a time of year");
+//                break;
+//            default :
+//                System.out.println("when, who, what? yum");
+//        }
 
     }
 }
