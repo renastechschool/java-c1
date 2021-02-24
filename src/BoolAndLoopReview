@@ -1,0 +1,145 @@
+review from booleans + loops codingBat homework assignments
+
+############################
+######### BOOLEANS #########
+############################
+
+https://codingbat.com/prob/p157733
+public int caughtSpeeding(int speed, boolean isBirthday) {
+  int result = 0;
+
+    // solution 1
+  // if (isBirthday) {
+  //   if (speed <= 65) {
+  //     result = 0;
+  //   } else if (speed >= 66 && speed <= 85) {
+  //     result = 1;
+  //   } else {
+  //     result = 2;
+  //   }
+  // } else if (speed <= 60) {
+  //   result = 0;
+  // } else if (speed >= 61 && speed <= 80) {
+  //   result = 1;
+  // } else {
+  //   result = 2;
+  // }
+
+    // solution 2
+  // if (isBirthday) {
+  //   speed = speed - 5;
+  // }
+  // if (speed <= 60) {
+  //   return 0;
+  // } else if (speed >= 61 && speed <= 80) {
+  //   return 1;
+  // } else {
+  //   return 2;
+  // }
+
+    // solution 3
+  // if (
+  //   (isBirthday && speed <= 65) ||
+  //   (!isBirthday && speed <= 60)
+  // ) {
+  //   result = 0;
+  // } else if (
+  //   (isBirthday && speed >= 66 && speed <= 85) ||
+  //   (!isBirthday && speed >= 61 && speed <= 80)
+  // ) {
+  //   result = 1;
+  // } else {
+  //   result = 2;
+  // }
+  return result;
+}
+
+https://codingbat.com/prob/p183071
+public int sortaSum(int a, int b) {
+
+  if (10 <= a + b && a + b <= 19) {
+    return 20;
+  } else {
+    return a + b;
+  }
+
+  int outResult = add(a, b);
+
+}
+
+https://codingbat.com/prob/p120633
+public int greenTicket(int a, int b, int c) {
+
+    if (a == b && b == c){
+    return 20;
+  }
+  else if (b == c || a == c || a == b){
+    return 10;
+  }
+  return 0;
+
+}
+
+https://codingbat.com/prob/p100962
+public boolean specialEleven(int n) {
+
+  // solution 1
+  // return n % 11 == 0 || n % 11 == 1;
+
+  // solution 2
+  // if (n % 11 == 0 || n % 11 == 1) {
+  //   return true;
+  // } else {
+  //   return false;
+  // }
+
+  // solution 3
+  boolean result = n % 11 == 0 || n % 11 == 1;
+  return result;
+}
+
+// 15 % 11 ||||||||||| (||||)
+// 5 % 2 || || (|)
+
+
+############################
+########## LOOPS ###########
+############################
+
+https://codingbat.com/prob/p142270
+public String stringTimes(String str, int n) {
+  String result = "";
+
+  for (int i = 0; i < n; i++) {
+    result += str;
+  }
+
+  return result;
+}
+
+https://codingbat.com/prob/p101475
+public String frontTimes(String str, int n) {
+  String result = ""; //strating varriable
+  int j = 3; // j is my default index of length of str
+  if (j > str.length()){
+    j = str.length();
+  }
+  for (int i = 0; i<n; i++){
+    result = result + str.substring(0,j);
+  }
+  return result;
+}
+
+
+https://codingbat.com/prob/p165666
+public String stringBits(String str) {
+  String result = "";
+  // index:   01234
+  // string: "hello"
+  int index = 0;
+  while (index < str.length()) {
+    result = result + str.charAt(index);
+    index = index + 2;
+  }
+  return result;
+}
