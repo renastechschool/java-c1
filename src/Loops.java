@@ -82,14 +82,73 @@ public class Loops {
 //        System.out.println(  hello.charAt(2) );
 
         // pyramid challenge
-        for (int x = 0; x < 5; x++) {
-            for(int i = 0; i <= x; i++) {
-                System.out.print("O");
-            }
-            System.out.println();
-        }
+//        for (int x = 0; x < 5; x++) {
+//            for(int i = 0; i <= x; i++) {
+//                System.out.print("O");
+//            }
+//            System.out.println();
+//        }
+//
+        //                  01234
+//        System.out.println("abcd".substring(2, 4));
+
+//        String str = "hihi";
+//        int numberOfHi = 0;
+//        for(int i = 0; i < str.length(); i++) {
+//            System.out.println("looking at: " + str.substring(i, i + 2));
+//            if (str.substring(i, i + 2).equals("hi")) {
+//                numberOfHi++;
+//            }
+//        }
+//        System.out.println("The number of hi is: " + numberOfHi);
+
+
+        /*
+      	    write a program that can reverse the following string:
+				String str = "Java";
+				output: avaJ
+				use str.charAt(index) => char at that index
+         */
+
+//        String java = "Java";
+//        int index = java.length() - 1;
+//        String result = "";
+//        while (index >= 0) {
+//            System.out.println("looking at: " + java.charAt(index));
+//            result += java.charAt(index);
+//            index--;
+//        }
+//        System.out.println(result);
+
+//        //                     01234
+//        String haluksString = "haluk";
+//        System.out.println(  haluksString.charAt(3)  ); // u
+
+
+
+        // write a program that starts with the string "hello world"
+        // and outputs a string with every other char removed, ie: "hlowrd"
+        // use charAt()
+
+//        String hello = "hello world";
+//        String result = "";
+//        for (int i = 0; i < hello.length(); i+=2) {
+//            result = result + hello.charAt(i);
+//        }
+//        System.out.println(result);
+
+
 
 
 
     }
 }
+
+
+
+
+
+
+
+
+

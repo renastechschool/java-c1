@@ -101,6 +101,50 @@ public boolean specialEleven(int n) {
 // 15 % 11 ||||||||||| (||||)
 // 5 % 2 || || (|)
 
+https://codingbat.com/prob/p115243
+public String fizzString2(int n) {
+  String output = "";
+
+  if (n % 3 == 0 && n % 5 == 0) {
+    output += "FizzBuzz";
+  } else if (n % 3 == 0) {
+    output += "Fizz";
+  } else if (n % 5 == 0) {
+    output += "Buzz";
+  } else {
+    output += n;
+  }
+
+  output += "!";
+
+  return output;
+}
+
+https://codingbat.com/prob/p179196
+public boolean lessBy10(int a, int b, int c) {
+  //          a  b  c
+  // lessBy10(1, 7, 11) → true
+  // lessBy10(11, 1, 7) → true
+  // return a + 10 <= c || b + 10 <= a;
+
+
+  return
+    a-10>=c||a-10>=b
+    ||b-10>=a||b-10>=c
+    ||c-10>=a||c-10>=b;
+
+  // if(
+  //   a-10>=c||a-10>=b
+  //   ||b-10>=a||b-10>=c
+  //   ||c-10>=a||c-10>=b
+  // ){
+  //   return true;
+  // } else {
+  //   return false;
+  // }
+}
+
+
 
 ############################
 ########## LOOPS ###########
@@ -142,4 +186,38 @@ public String stringBits(String str) {
     index = index + 2;
   }
   return result;
+}
+
+https://codingbat.com/prob/p117334
+public String stringSplosion(String str) {
+
+  int index = 0;
+  String result = "";
+  while (index < str.length()) {
+    result += str.substring(0, ++index);
+  }
+  return result;
+
+  // "abcde".length() => 5
+
+  // Given a non-empty string like "Code"
+  // return a string like "CCoCodCode".
+  // ## breakdown ##
+  // first step:
+  // look at first char "C", we have "C"
+  // second step:
+  // look first 2 chars.. "Co"
+  // .. we have "C" + "Co" => "CCo"
+  // .. do that till we look at the whole string ..
+}
+
+https://codingbat.com/prob/p147448
+public int countHi(String str) {
+  int numberOfHi = 0;
+  for(int i = 0; i < str.length() - 1; i++) {
+    if (str.substring(i, i + 2).equals("hi")) {
+      numberOfHi++;
+    }
+  }
+  return numberOfHi;
 }
