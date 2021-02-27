@@ -139,6 +139,41 @@ public class Loops {
 
 
 
+        // Print integers 1 to N, but print “Fizz” if an integer is
+        // divisible by 3, “Buzz” if an integer is divisible by 5,
+        // and “FizzBuzz” if an integer is divisible by both 3 and 5.
+
+//        int a;
+//        for(a = 1; a <= 20; a++) {
+//            if (a % 3 == 0 && a % 5 == 0) {
+//                System.out.println("FizzBuzz");
+//            } else if (a % 3 == 0) {
+//                System.out.println("Fizz");
+//            } else if (a % 5 == 0) {
+//                System.out.println("Buzz");
+//            } else {
+//                System.out.println(a);
+//            }
+//        }
+
+        // pyramid challenge to 6
+
+//        for (int i = 0; i < 6; i++) {
+//            for (int a = 0; a < i; a++) {
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+
+        for (int i = 0; i < 6; i++) {
+            for (int a = 6 - i; a > 0; a--) {
+                System.out.print(" ");
+            }
+            for (int a = 0; a < i * 2 - 1; a++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
 
 
     }
