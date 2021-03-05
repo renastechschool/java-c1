@@ -1,4 +1,5 @@
-@SuppressWarnings("all")
+
+import java.util.Arrays;
 
 public class ArraysTwo {
     public static void main(String[] args) {
@@ -235,25 +236,112 @@ public class ArraysTwo {
         // two values in int[] ints is contained in int[] ints.
         // example: {2,3,6,2,3,5} = "yes"
         // because 2 + 3 = 5 and 5 is in the array.
-
-
+//        int[] ints = {2,3,6,2,3,5};
+//
+//        if (ints.length < 2) {
+//            System.out.println("invalid input");
+//            return;
+//        }
+//
+//        boolean myBool = false;
+//        int sum = ints[0] + ints[1];
+//
+//        for (int i = 0; i < ints.length; i++) {
+//            if (ints[i] == sum) {
+//                myBool = true;
+//            }
+//        }
+//
+//        System.out.println(myBool ? "yes" : "no");
 
 
 
         // write code to print the longest value in String[] strings.
+//        String[] strings = {};
 
+//        if (strings.length == 0) {
+//            System.out.println("invalid input");
+//            return;
+//        }
+//
+//        // first solution
+//        int highestIndex = 0;
+//        for (int i = 0; i < strings.length; i++) {
+//            if (strings[i].length() > strings[highestIndex].length()) {
+//                highestIndex = i;
+//            }
+//        }
+//        System.out.println(strings[highestIndex]);
+//        // solution two
+//        String longest = strings[0];
+//        for (int i = 0; i < strings.length; i++) {
+//            if (strings[i].length() > longest.length()) {
+//                longest = strings[i];
+//            }
+//        }
+//        System.out.println(longest);
 
 
 
         // write code to create a boolean[] from int[] ints
         // where even = true and odd = false.
+        // {1, 2, 3} -> {false, true, false}
+//        int[] ints = {0, 4, 7};
+//        boolean[] myBools = new boolean[ints.length]; // {false, false, false}
+//        boolean myBool = false; // false
+
+//        for (int i = 0; i < ints.length; i++) {
+//            myBools[i] = ints[i] % 2 == 0;
+//        }
+
+//        for (int i = 0; i < ints.length; i++) {
+//            if (ints[i] % 2 == 0) {
+//                myBools[i] = true;
+//            } else {
+//                myBools[i] = false;
+//            }
+//        }
+
+        // test method one
+        // System.out.println( Arrays.toString(myBools) );
+
+        // test method two
+//        for (int i = 0; i < ints.length; i++) {
+//            System.out.println(myBools[i]);
+//        }
 
 
 
 
-        // write code that prints the diffrence between the highest
+
+
+
+
+
+
+        // write code that prints the difference between the highest
         // number in int[] ints and the lowest number in int[] ints.
         // example: {2,7,4,1,8} = 8 - 1 = 7
+//        int[] ints = {2};
+//
+//        if (ints.length < 1) {
+//            return;
+//        }
+//
+//        int highest = ints[0], lowest = ints[0];
+//        for (int i = 0; i < ints.length; i++) {
+//            if (ints[i] > highest) {
+//                highest = ints[i];
+//            }
+//            if (ints[i] < lowest) {
+//                lowest = ints[i];
+//            }
+//        }
+//        System.out.println(highest - lowest);
+
+
+
+
 
 
 
@@ -261,5 +349,36 @@ public class ArraysTwo {
         // write code to print out the highest and the second highest
         // numbers in int[] ints.
         // example {1,6,3,8,3,9,4} -> 9 and 8
+        int[] myint = {8,9,3,9,8,8,4};
+        Arrays.sort(myint);
+        int index = myint.length - 1, fbig = myint[index], sbig = fbig;
+        while (fbig == sbig && index >= 0) {
+            sbig = myint[index--];
+        }
+
+//
+//        for (int x : myint) {
+//            if (x > fbig) {
+//                sbig = fbig;
+//                fbig = x;
+//            } else if (x > sbig) {
+//                sbig = x;
+//            }
+//        }
+        System.out.println(fbig + " and " + sbig);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
