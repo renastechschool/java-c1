@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class CommandLineAppTwo {
     public static void main(String[] args) {
