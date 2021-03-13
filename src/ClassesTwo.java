@@ -7,7 +7,6 @@ public class ClassesTwo {
 }
 
 
-
 // create a class Person with the following requirements:
 // private property name(string), Set in constructor with a getter, no setter
 // private property catchPhrase(string), Set in constructor with getter and setter
@@ -90,9 +89,6 @@ class Person {
 }
 
 
-
-
-
 // create a class Fruit with the following requirements:
 // private property name(string), Set in constructor with a getter, no setter
 // private property (string), Set in constructor with a getter, no setter
@@ -143,13 +139,6 @@ class Fruit {
         System.out.println(watermelon);
     }
 }
-
-
-
-
-
-
-
 
 
 // create a class Dog. It should have
