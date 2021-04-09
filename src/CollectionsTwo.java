@@ -21,7 +21,6 @@ public class CollectionsTwo {
 //            System.out.println(str);
 //        }
 
-
         // create a List<String> of random quotes.
         // write a command line application to
         // prompt the user for an index between 0 and n and
