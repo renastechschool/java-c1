@@ -25,7 +25,7 @@ public class Exceptions {
 
 class Test7867 {
     // example
-    public static void ourMethodName(String s) throws Exception {
+    static void ourMethodName(String s) throws Exception {
         if (s.equals("java")) {
             throw new Exception("java");
         }
